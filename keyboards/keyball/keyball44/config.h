@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // USB Device descriptor parameters
 #define VENDOR_ID           0x5957      // "YW" = Yowkees
-#define PRODUCT_ID          0x0400      
+#define PRODUCT_ID          0x0400
 #define DEVICE_VER          0x0001
 #define MANUFACTURER        Yowkees
 #define PRODUCT             Keyball44
@@ -40,7 +40,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SOFT_SERIAL_PIN         D2
 #define SPLIT_HAND_MATRIX_GRID  F7, D4
 #define SPLIT_USB_DETECT
-#define SPLIT_USB_TIMEOUT       500
+#define SPLIT_USB_TIMEOUT       2500
 
 #define SPLIT_TRANSACTION_IDS_KB KEYBALL_GET_INFO, KEYBALL_GET_MOTION, KEYBALL_SET_CPI
 
@@ -79,3 +79,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #undef LOCKING_RESYNC_ENABLE
 #define NO_ACTION_MACRO
 #define NO_ACTION_FUNCTION
+
+// my_custom
+#define TRACKBALL_SCROLL_DIVIDER    5
+#define HOLD_ON_OTHER_KEY_PRESS
